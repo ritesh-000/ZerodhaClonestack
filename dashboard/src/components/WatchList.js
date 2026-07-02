@@ -199,7 +199,7 @@ const WatchList = () => {
     const fetchWatchlist = async () => {
       try {
         const holdingsRes = await axios.get(
-          "http://localhost:3002/allHoldings"
+          "https://zerodhaclonestack.onrender.com/allHoldings"
         );
 
         const holdings = holdingsRes.data;
@@ -207,7 +207,7 @@ const WatchList = () => {
         const updated = await Promise.all(
           holdings.map(async (stock) => {
             const priceRes = await axios.get(
-              `http://localhost:3002/price/${stock.name}`
+              `https://zerodhaclonestack.onrender.com/price/${stock.name}`
             );
 
             return {

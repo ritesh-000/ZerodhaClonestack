@@ -55,7 +55,7 @@
 
 //   useEffect(() => {
 //     axios
-//       .get("http://localhost:3002/allPositions")
+//       .get("https://zerodhaclonestack.onrender.com/allPositions")
 //       .then((res) => {
 //         setPositions(res.data);
 //       })
@@ -123,14 +123,14 @@ const Positions = () => {
     const fetchPositions = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:3002/allPositions"
+          "https://zerodhaclonestack.onrender.com/allPositions"
         );
 
         const updatedPositions = await Promise.all(
           res.data.map(async (stock) => {
             try {
               const priceRes = await axios.get(
-                `http://localhost:3002/price/${stock.name}`
+                `https://zerodhaclonestack.onrender.com/price/${stock.name}`
               );
 
               return {

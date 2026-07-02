@@ -8,7 +8,7 @@ const Holdings = () => {
   const [allHoldings, setAllHoldings] = useState([]);
 
   // useEffect(() => {
-  //   axios.get("http://localhost:3002/allHoldings").then((res) => {
+  //   axios.get("https://zerodhaclonestack.onrender.com/allHoldings").then((res) => {
   //     // console.log(res.data);
   //     setAllHoldings(res.data);
   //   });
@@ -16,7 +16,7 @@ const Holdings = () => {
   useEffect(() => {
   async function loadHoldings() {
 
-    const res = await axios.get("http://localhost:3002/allHoldings");
+    const res = await axios.get("https://zerodhaclonestack.onrender.com/allHoldings");
 
     const holdings = res.data;
 
@@ -25,7 +25,7 @@ const Holdings = () => {
 
         try {
           const live = await axios.get(
-            `http://localhost:3002/price/${stock.name}`
+            `https://zerodhaclonestack.onrender.com/price/${stock.name}`
           );
 
           return {
