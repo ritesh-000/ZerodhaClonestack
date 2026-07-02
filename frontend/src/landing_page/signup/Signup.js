@@ -6,7 +6,7 @@ function Signup() {
   const handleSignup = () => {
     // Later you can save user details here
 
-    window.location.href = "http://localhost:3000";
+    window.location.href = "https://zerodha-dashboard-zv31.onrender.com";
   };
 
   return (
