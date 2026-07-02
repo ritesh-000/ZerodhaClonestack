@@ -5,10 +5,10 @@ A full-stack Zerodha Clone built using the MERN Stack. The project replicates th
 ## 🚀 Live Demo
 
 ### Frontend
-[https://zerodha-frontend-4npd.onrender.com](url)
+https://zerodha-frontend-4npd.onrender.com
 
 ### Dashboard
-[https://zerodha-dashboard-zv31.onrender.com](url)
+https://zerodha-dashboard-zv31.onrender.com
 
 
 
